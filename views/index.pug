@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to XUMM 2FA demo app
+  p The purpose of the app is to demonstrate Google + 2FA based on XUMM
+  if userInfo.data
+    p Authenticated user accunt data:
+    p #{JSON.stringify(userInfo.data)}
+  else
+    p You will be prompted to sign in with Google creds and then authenticate with XUMM
+  a(href = url)
+            button(type="button") #{buttonCaption}

@@ -1,7 +1,9 @@
 # fixarta-xumm-2fa-auth
 
-<img src="https://imgur.com/FF5dITO.png/light-mode-toggle" width=50%>
-<img src="https://imgur.com/qhDvJHb.png/dark-mode-toggle" width=50%>
+<p>
+    <img src="https://user-images.githubusercontent.com/44860643/160254942-b84b91e5-fc46-4e3e-b3ac-d785c1c64f03.png#gh-light-mode-only" width=50%>
+    <img src="https://user-images.githubusercontent.com/44860643/160254943-eb76d8f4-15d8-4fcc-b424-6c17c924e55b.png#gh-dark-mode-only" width=50%>
+</p>
 
 ### User authentification using [XUMM](https://xumm.readme.io/) walet
 

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 XUMM authentication: confirmation
+  p Please authenticate with XUMM wallet to proceed. To do this, open XUMM app and scan QR code below.
+  img(src= qrCodeUrl)
+  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+  script.
+    console.log('Start');
+    setInterval( function() {
+      console.log('Request status...');
+      $.ajax({
+            url: '/auth/xumm/status/',
+            dataType: 'json',
+            type: 'get',
+            success: function(data) { // user authenticated
+              console.log('Authenticated!', data);
+              window.location.href = '/';
+            },
+            error: function() { // not authenticated as of yet
+              console.log('Retry later...');
+            }
+          });
+
+    }, 5000);
